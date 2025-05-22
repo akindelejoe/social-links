@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, hsl(210, 50%, 15%), hsl(260, 50%, 20%), hsl(320, 50%, 15%), hsl(210, 50%, 15%));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    max-width: 375px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+.profile-pic {
+  width: 100px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit:cover;
+  border: 2px solid var(--white);
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.tagline {
+  font-weight: bold;
+}
+
+
+.Social-Links {
+    list-style: none;
+    padding: 0;
+}
+
+.Social-Links li {
+    margin: 10px 0;
+}
+
+.Social-Links li a {
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.Social-Links li a:hover,
+.Social-Links li a:focus {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 10%);
+}
+
+ #address {
+        color: hsl(75, 94%, 57%); 
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+ }
+
+ @media (min-width: 768px) {
+    .card {
+      padding: 2.5rem;
+    }
+  
+    .Social-Links a {
+      font-size: 16px;
+    }
+  }
+
+
+  /* @media (min-width: 768px) { 
+    .card {
+      max-width: 620px;
+      padding: 3rem;
+    }
+  
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+  
+    #address {
+      font-size: 16px;
+    }
+  
+    .Social-Links a {
+      font-size: 16px;
+    }
+  }
+   */
+   @media (max-width: 400px) {
+    .card {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .name {
+      font-size: 1.25rem;
+    }
+  }
+
+
+  /* gradient animation */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
