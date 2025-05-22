@@ -28,9 +28,8 @@ body {
 .profile-pic {
   width: 100px;
   height: 120px;
-  border-radius: 50%;
+  border-radius: 80%;
   object-fit:cover;
-  border: 2px solid var(--white);
   margin-bottom: 1rem;
 }
 
